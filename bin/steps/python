@@ -111,6 +111,7 @@ if [ ! "$SKIP_INSTALL" ]; then
     mkdir -p .heroku/python
 
     mcount "version.python.$PYTHON_VERSION"
+    puts-step "Done 'mcounting'"
 
     if ! curl "${VENDORED_PYTHON}" -s | tar zxv -C .heroku/python &> /dev/null; then
       puts-warn "Requested runtime ($PYTHON_VERSION) is not available for this stack ($STACK)."
@@ -124,6 +125,7 @@ if [ ! "$SKIP_INSTALL" ]; then
   FRESH_PYTHON=true
 
   hash -r
+  puts-step "Done installing Python"
 fi
 
 # Heroku uses the get-pip utility maintained by the Python community to vendor Pip.
