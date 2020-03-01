@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+puts-step "Running the python3 script"
 # fail hard
 set -o pipefail
 # fail harder

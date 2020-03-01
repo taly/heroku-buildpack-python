@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Build Path: /app/.heroku/python/
-
+puts-step "In the python-3.6.10 runtime"
 source $(dirname $0)/python3
