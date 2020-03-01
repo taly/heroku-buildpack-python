@@ -19,7 +19,7 @@ curl -L "${dep_url}" | tar xz -C "${OUT_PREFIX}"
 mv "${OUT_PREFIX}/${python_version}" src
 cd src
 
-./configure --prefix=$OUT_PREFIX  --enable-unicode=ucs4 --with-ensurepip=no
+./configure --prefix=$OUT_PREFIX  --enable-unicode=ucs4 --with-ensurepip=no --enable-shared
 make
 make install
 
